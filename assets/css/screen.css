@@ -567,14 +567,12 @@ margin on the iframe, cause it breaks stuff. */
     width: auto;
 }
 
-.back-button {
+.nav-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     display: inline-block;
-    float: left;
     height: 38px;
-    padding: 0 15px 0 10px;
     border: transparent 1px solid;
     color: #9EABB3;
     text-align: center;
@@ -584,6 +582,11 @@ margin on the iframe, cause it breaks stuff. */
     border-radius: 3px;
     background: rgba(0,0,0,0.1);
     transition: all ease 0.3s;
+}
+
+.back-button {
+    float: left;
+    padding: 0 15px 0 10px;
 }
 .back-button:before {
     position: relative;
@@ -594,25 +597,19 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .subscribe-button {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    display: inline-block;
     float: right;
-    height: 38px;
     padding: 0 20px;
-    border: transparent 1px solid;
-    color: #9EABB3;
-    text-align: center;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 35px;
-    white-space: nowrap;
-    border-radius: 3px;
-    background: rgba(0,0,0,0.1);
-    transition: all ease 0.3s;
 }
 .subscribe-button:before {
+    font-size: 9px;
+    margin-right: 6px;
+}
+
+.about-button {
+    float: right;
+    padding: 0 20px;
+}
+.about-button:before {
     font-size: 9px;
     margin-right: 6px;
 }
@@ -640,24 +637,15 @@ margin on the iframe, cause it breaks stuff. */
     color: #fff;
 }
 
-.main-nav.overlay .back-button,
-.main-nav.overlay .subscribe-button {
-    border-color: rgba(255,255,255,0.6);
+a.nav-link:hover {
+    border-color: rgba(0,0,0,0.3)
+    transition: all 0.1s ease;
 }
-
 .main-nav.overlay a:hover {
-    color: #222;
-    border-color: #fff;
     background: #fff;
     transition: all 0.1s ease;
 }
 
-/* Add a border to the buttons on hover */
-.back-button:hover,
-.subscribe-button:hover {
-    border-color: #bfc8cd;
-    color: #9EABB3;
-}
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
